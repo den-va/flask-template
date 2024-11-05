@@ -9,7 +9,7 @@ def create_app(debug=False):
 
     @app.route("/")
     def index():
-        app_name = "Time police web app"
+        app_name = "Flask app template"
         return jsonify(
             {
                 "App": app_name,
@@ -17,8 +17,3 @@ def create_app(debug=False):
         )
 
     return app
-
-
-if __name__ == "__main__":
-    app = create_app(debug=True)
-    app.run(host="0.0.0.0", port=6548)
