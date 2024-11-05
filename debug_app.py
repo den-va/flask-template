@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify
 import json
 from app.config import Config
 from app.slack_api.slack_client import SlackClient
-from app.slack_api import slack_blocks
 
 
 app = Flask(__name__)
